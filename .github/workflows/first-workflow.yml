@@ -11,14 +11,14 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      -name: node install & build
+      - name: node install & build
         uses: actions/setup-node@v3
         with:
           node-version: 16
-                          - run: npm i
-                          - run: npm run build
+      - run: npm i
+      - run: npm run build
 
-      -name: deploy to github pages
+      - name: deploy to github pages
         uses: JamesIves/github-pages-deploy-action@v4.3.3
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
