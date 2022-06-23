@@ -2,6 +2,8 @@
     import Page from "../lib/components/index/Page.svelte";
     import Spacer from "../lib/components/index/Spacer/Spacer.svelte";
 
+    import {base} from '$app/paths'
+
     const theTeam = [
         {
             "name": "Agnes Köhler",
@@ -76,7 +78,7 @@
     <div id="the-team">
         {#each theTeam as {name, photo, email}}
             <div>
-                <img src={"/img/theteam/" + photo}
+                <img src={`${base}/img/theteam/${photo}`}
                      alt={"member image " + name}
                 />
                 <div>{name}</div>

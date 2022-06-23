@@ -8,7 +8,7 @@
 <ul data-title={title}>
     {#each links as [text, url, imgUrl]}
         <li>
-            {#if imgUrl}<img src="/logos{imgUrl}" width="22" height="22" alt={text}>{/if}
+            {#if imgUrl}<img src="{base}/logos{imgUrl}" width="22" height="22" alt={text}>{/if}
             <a href={url.startsWith('/') ? base : ''}{url}>{text}</a>
         </li>
     {/each}
