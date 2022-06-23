@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8"/>
-    <link rel="icon" href="./favicon.png"/>
+    <link rel="icon" href="../favicon.png"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
     <meta name="description" content="Website for JSCraftCamp - 2022 in Munich"/>
@@ -20,14 +20,14 @@
     <meta http-equiv="content-security-policy" content="">
 	<link rel="stylesheet" href="/_app/immutable/assets/pages/__layout.svelte-80d86050.css">
 	<link rel="stylesheet" href="/_app/immutable/assets/Spacer-c8a49f3c.css">
-	<link rel="stylesheet" href="/_app/immutable/assets/pages/sponsoring.svelte-61b58ae6.css">
+	<link rel="stylesheet" href="/_app/immutable/assets/pages/registration.svelte-198b625a.css">
 	<link rel="stylesheet" href="/_app/immutable/assets/Page-c3ea5c40.css">
-	<link rel="modulepreload" href="/_app/immutable/start-745ed471.js">
+	<link rel="modulepreload" href="/_app/immutable/start-1df3aaee.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/index-cd4247d5.js">
 	<link rel="modulepreload" href="/_app/immutable/pages/__layout.svelte-1b507f73.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/Logo-c30a7c8b.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/Spacer-2bf833ec.js">
-	<link rel="modulepreload" href="/_app/immutable/pages/sponsoring.svelte-b146c236.js">
+	<link rel="modulepreload" href="/_app/immutable/pages/registration.svelte-be765978.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/Page-bb13bf4e.js">
 </head>
 <body>
@@ -48,83 +48,96 @@
 
 
 
-<main class="main-column svelte-860zit"><div class="svelte-15fp16m center"><h2 class="uppercase wide svelte-15fp16m">Want to become a sponsor?</h2>
+<main class="main-column svelte-860zit"><div class="svelte-15fp16m"><h2 class="uppercase wide svelte-15fp16m">Registration</h2>
 
-    <h2 class="svelte-3z1a5r">Expose your Company to a Group of Highly Motivated Technology Enthusiasts</h2>
+    <p class="svelte-qfl24e">To register for JSCraftCamp you have to add a json file with your name
+        and some other information to our 
+        <a href="https://github.com/jscraftcamp/website" rel="noreferrer noopener" target="_blank" class="svelte-qfl24e">GitHub Repository
+        </a> 
+        via a 
+        <a href="http://stackoverflow.com/questions/14680711/how-to-do-a-github-pull-request" rel="noreferrer noopener" target="_blank" class="svelte-qfl24e">Pull Request
+        </a>
+        . Registration is free of charge. Your json file should follow the
+        naming scheme <code>$name_or_nickname.json</code> and must be placed
+        in the folder <code>participants</code>. The structure of the file is
+        described below.
+    </p>
 
-    <div class="xs svelte-1kjpinl"></div>
+    <p class="svelte-qfl24e">To test if your json file is a valid registration you can run 
+        <code>npm test</code>
+        (more details about this are in the 
+        <a href="https://github.com/jscraftcamp/website/blob/main/README.md" rel="noreferrer noopener" target="_blank" class="svelte-qfl24e">README
+        </a>
+        ). Invalid registrations will be rejected. If you need any help with
+        registration, don&#39;t hesitate to contact one of the 
+        <a href="/theteam" class="svelte-qfl24e">team</a></p>
 
+    <p class="svelte-qfl24e">Out of these files a page with information about all participants will
+        be generated.
+    </p>
 
-
-    <div class="sponsoring-grid svelte-3z1a5r"><div class="svelte-3z1a5r"><h3 class="svelte-3z1a5r">You will get ...</h3>
-            <ul class="svelte-3z1a5r"><li>Get up to <strong>5 preregistered participant spots</strong> for
-                    your representatives
-                </li>
-                <li>We place your <strong>logo</strong> and <strong>link</strong> on
-                    the JSCraftCamp website
-                </li>
-                <li>Your <strong>exhibitor</strong> will be visible for the whole
-                    time during the event
-                </li>
-                <li>You can bring a <strong>stand-up display</strong> to be
-                    permanently visible.
-                </li>
-                <li>You can make your job ads visible for all attendees for the
-                    whole time during the conference.
-                </li>
-                <li>Your <strong>company name</strong> will be mentioned several
-                    times during the conference
-                </li>
-                <li>It&#39;s an OpenSpace — contribute the 
-                    <strong>talks that are important to you</strong> to the
-                    community
-                </li>
-                <li>Sponsors will be announced via the official JSCC 
-                    <strong>Twitter</strong> account
-                </li></ul></div>
-        <div class="svelte-3z1a5r"><h3 class="svelte-3z1a5r">Why Sponsor?</h3>
-            <p class="svelte-3z1a5r">The JSCraftCamp is an Open Space conference that attracts diverse
-                people from the JavaScript community who really care about their
-                craft. The crowd is self selected by investing time for their own
-                application (pull request). Besides developers, you will find all
-                kind of people with different job roles that really care about
-                technology and improvement. You will get the chance to present
-                your brand to these 80 to 120 highly skilled individuals and show
-                them how much you care! We&#39;ll all thank you for that!
-            </p></div></div>
+    <p class="svelte-qfl24e">To unregister please write another pull request or 
+        <a href="mailto:team@jscraftcamp.org" class="svelte-qfl24e">let us know</a>.
+    </p>
 
     <div class="s svelte-1kjpinl"></div>
 
 
 
-    <p class="svelte-3z1a5r">Show how much you care about improving the state of Crafting Software
-        and Clean Code in the JS-Community!
+    <h3 class="svelte-1re2d85">The JSON Format
+</h3>
+
+<div><pre class="svelte-1re2d85"><code>{
+    &quot;name&quot;: &quot;My Name&quot;,
+    &quot;company&quot;: &quot;my company&quot;,
+    &quot;when&quot;: {
+      &quot;friday&quot;: true,
+      &quot;saturday&quot;: false
+    },
+    &quot;tags&quot;: [&quot;ReScript&quot;, &quot;Svelte&quot;, &quot;Zustand&quot;, &quot;GraphQL&quot;],
+    &quot;vegan&quot;: false,
+    &quot;vegetarian&quot;: false,
+    &quot;allergies&quot;: &quot;&quot;,
+    &quot;what_is_my_connection_to_javascript&quot;: &quot;...&quot;,
+    &quot;what_can_i_contribute&quot;: &quot;???&quot;,
+    &quot;tshirt&quot;: &quot;/^(W|M)-(S|M|L|XL)$/&quot;,
+    &quot;twitter&quot;: &quot;&quot;
+}
+</code></pre></div>
+
+<div id="table-wrapper" class="svelte-1re2d85"><table class="svelte-1re2d85"><tbody><tr class="svelte-1re2d85"><td class="svelte-1re2d85 strong"><code>name *</code></td>
+                <td class="svelte-1re2d85"><!-- HTML_TAG_START -->first name and last name or a nick name<!-- HTML_TAG_END --></td>
+            </tr><tr class="svelte-1re2d85"><td class="svelte-1re2d85"><code>company</code></td>
+                <td class="svelte-1re2d85"><!-- HTML_TAG_START -->A company<!-- HTML_TAG_END --></td>
+            </tr><tr class="svelte-1re2d85"><td class="svelte-1re2d85 strong"><code>when.friday *</code></td>
+                <td class="svelte-1re2d85"><!-- HTML_TAG_START -->If you are attending on Friday (Boolean value)<!-- HTML_TAG_END --></td>
+            </tr><tr class="svelte-1re2d85"><td class="svelte-1re2d85 strong"><code>when.saturday *</code></td>
+                <td class="svelte-1re2d85"><!-- HTML_TAG_START -->If you are attending on Saturday (Boolean value)<!-- HTML_TAG_END --></td>
+            </tr><tr class="svelte-1re2d85"><td class="svelte-1re2d85 strong"><code>tags *</code></td>
+                <td class="svelte-1re2d85"><!-- HTML_TAG_START -->Share what you think is important, use at least one tag. (Array of strings)<!-- HTML_TAG_END --></td>
+            </tr><tr class="svelte-1re2d85"><td class="svelte-1re2d85 strong"><code>vegan *</code></td>
+                <td class="svelte-1re2d85"><!-- HTML_TAG_START -->Just for planning: Let us know if you are a vegan** (Boolean value)<!-- HTML_TAG_END --></td>
+            </tr><tr class="svelte-1re2d85"><td class="svelte-1re2d85 strong"><code>vegetarian *</code></td>
+                <td class="svelte-1re2d85"><!-- HTML_TAG_START -->Just for planning: Let us know if you are a vegetarian** (Boolean value)<!-- HTML_TAG_END --></td>
+            </tr><tr class="svelte-1re2d85"><td class="svelte-1re2d85"><code>allergies</code></td>
+                <td class="svelte-1re2d85"><!-- HTML_TAG_START -->Tell us if you have any special dietary requirements**<!-- HTML_TAG_END --></td>
+            </tr><tr class="svelte-1re2d85"><td class="svelte-1re2d85 strong"><code>what_is_my_connection_to_javascript *</code></td>
+                <td class="svelte-1re2d85"><!-- HTML_TAG_START -->2-5 sentences about your experience with JavaScript or related technologies.<!-- HTML_TAG_END --></td>
+            </tr><tr class="svelte-1re2d85"><td class="svelte-1re2d85"><code>what_can_i_contribute</code></td>
+                <td class="svelte-1re2d85"><!-- HTML_TAG_START -->1-3 sentences about what you would like to contribute to the BarCamp.<!-- HTML_TAG_END --></td>
+            </tr><tr class="svelte-1re2d85"><td class="svelte-1re2d85"><code>tshirt **</code></td>
+                <td class="svelte-1re2d85"><!-- HTML_TAG_START -->We will have a limited number of t-shirts with the event and sponsor logos. If you want one: fit (W=women, M=Man) and size (S,M,L,XL,XXL), e.g. W-S or M-XL. If your registration is shortly before the event there might be no time to have a t-shirt produced for you, please be aware.<!-- HTML_TAG_END --></td>
+            </tr><tr class="svelte-1re2d85"><td class="svelte-1re2d85"><code>twitter</code></td>
+                <td class="svelte-1re2d85"><!-- HTML_TAG_START -->Your Twitter handle <em>without</em> the leading <code>@</code>.<!-- HTML_TAG_END --></td>
+            </tr></tbody></table>
+
+    <p class="svelte-1re2d85"><strong>*: mandatory field</strong></p>
+
+    <p class="svelte-1re2d85">**: This is a free and completely sponsored event. Even though we want
+        to try, we can not guarantee to be able to respect every dietary
+        requirement
     </p>
-
-    <p class="svelte-3z1a5r">We believe in people and our guests - so we ask nothing more of
-        everybody than to be respectful and friendly with one another.
-    </p>
-
-    <div class="xs svelte-1kjpinl"></div>
-
-
-
-    <h3 class="svelte-3z1a5r">What to Sponsor?
-    </h3>
-    <p class="svelte-3z1a5r">All expense will serve the attendees of the JSCraftCamp, all the
-        expenses serve for food, drinks, chairs, and all alike things that are
-        needed for spending a couple of days together thinking and hacking for
-        the modern world.
-    </p>
-
-    <div class="xs svelte-1kjpinl"></div>
-
-
-
-    <a href="https://github.com/orgs/jscraftcamp/projects/3" class="svelte-3z1a5r">Find all sponsoring items on GitHub:
-        <br>
-        https://github.com/orgs/jscraftcamp/projects/3
-    </a>
+</div>
 
 </div></main>
 
@@ -138,24 +151,24 @@
 </footer>
 
 
-		<script type="module" data-sveltekit-hydrate="1eskdt2">
-		import { start } from "/_app/immutable/start-745ed471.js";
+		<script type="module" data-sveltekit-hydrate="1lfjp7g">
+		import { start } from "/_app/immutable/start-1df3aaee.js";
 		start({
-			target: document.querySelector('[data-sveltekit-hydrate="1eskdt2"]').parentNode,
+			target: document.querySelector('[data-sveltekit-hydrate="1lfjp7g"]').parentNode,
 			paths: {"base":"","assets":""},
 			session: {},
 			route: true,
 			spa: false,
-			trailing_slash: "never",
+			trailing_slash: "always",
 			hydrate: {
 				status: 200,
 				error: null,
-				nodes: [0, 5],
+				nodes: [0, 4],
 				params: {},
-				routeId: "sponsoring"
+				routeId: "registration"
 			}
 		});
-	</script>
+	</script><script type="application/json" sveltekit:data-type="props">{"template":"{\n    \"name\": \"My Name\",\n    \"company\": \"my company\",\n    \"when\": {\n      \"friday\": true,\n      \"saturday\": false\n    },\n    \"tags\": [\"ReScript\", \"Svelte\", \"Zustand\", \"GraphQL\"],\n    \"vegan\": false,\n    \"vegetarian\": false,\n    \"allergies\": \"\",\n    \"what_is_my_connection_to_javascript\": \"...\",\n    \"what_can_i_contribute\": \"???\",\n    \"tshirt\": \"/^(W|M)-(S|M|L|XL)$/\",\n    \"twitter\": \"\"\n}\n"}</script>
 </body>
 </html>
 
