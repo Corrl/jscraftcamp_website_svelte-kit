@@ -1,0 +1,9 @@
+:root {
+    --text-color: black;
+    --primary-color: #ef3883;
+
+    --page-bg: #f2f2f2;
+
+    --footer-bg: var(--text-color);
+    --footer-text: white;
+}
