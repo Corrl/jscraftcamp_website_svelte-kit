@@ -4,7 +4,6 @@ import adapter from '@sveltejs/adapter-static';
 const config = {
 	kit: {
 		adapter: adapter({
-			// default options are shown
 			pages: 'build',
 			assets: 'build',
 			fallback: null,
@@ -13,7 +12,7 @@ const config = {
 		prerender: {
 			default: true,
 		},
-		trailingSlash: 'always', // for github pages
+		trailingSlash: 'always', // for github pages + .nojekyll file (alternative change '_app' folder name in 'build/'?)
 	}
 };
 
