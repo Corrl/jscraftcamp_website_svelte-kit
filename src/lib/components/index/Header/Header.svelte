@@ -1,4 +1,6 @@
 <script>
+    import { base } from '$app/paths';
+
     let nav = [
         {text: 'Registration', to: '/registration'},
         {text: 'Participants', to: '/participants'},
@@ -11,7 +13,7 @@
 <header class="main-column">
     <nav>
         <div class="logo">
-            <a href="/">
+            <a href="{base}/">
                 <h3>
                     JSCraftCamp
                 </h3>
@@ -20,7 +22,7 @@
 
         <div>
             {#each nav as n}
-                <a href={n.to}>{n.text}</a>
+                <a href={base}{n.to}>{n.text}</a>
             {/each}
         </div>
     </nav>

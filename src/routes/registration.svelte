@@ -11,6 +11,8 @@
     import Spacer from "../lib/components/index/Spacer/Spacer.svelte";
     import RegisterJSON from "../lib/components/registration/RegisterJSON.svelte";
 
+    import { base } from '$app/paths';
+
     export let template
 </script>
 
@@ -53,7 +55,7 @@
         </a>
         ). Invalid registrations will be rejected. If you need any help with
         registration, don't hesitate to contact one of the{" "}
-        <a href="/theteam">team</a>
+        <a href="{base}/theteam">team</a>
     </p>
 
     <p>
