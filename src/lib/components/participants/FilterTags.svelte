@@ -20,9 +20,7 @@
 </script>
 
 <div id="filter-tags">
-    <div class="" style="display: flex; justify-content: center; align-items: center">
-        <h3>Filter</h3>
-    </div>
+    <h3>Filter</h3>
     <div class="filter-tag">
         <input type="radio"
                id="filter-tag"

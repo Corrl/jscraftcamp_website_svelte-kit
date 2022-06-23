@@ -1,17 +1,17 @@
 <script>
     import { base } from '$app/paths';
 
-    let nav = [
-        {text: 'Registration', to: '/registration'},
-        {text: 'Participants', to: '/participants'},
-        {text: 'Sponsoring', to: '/sponsoring'},
-        {text: 'Values', to: '/values'}
+    const nav = [
+        ['Registration', '/registration'],
+        ['Participants', '/participants'],
+        ['Sponsoring', '/sponsoring'],
+        ['Values', '/values'],
     ]
 
 </script>
 
 <header class="main-column">
-    <nav>
+    <nav aria-label="primary">
         <div class="logo">
             <a href="{base}/">
                 <h3>
@@ -21,8 +21,8 @@
         </div>
 
         <div>
-            {#each nav as n}
-                <a href={base}{n.to}>{n.text}</a>
+            {#each nav as [text, url]}
+                <a href={base}{url}>{text}</a>
             {/each}
         </div>
     </nav>

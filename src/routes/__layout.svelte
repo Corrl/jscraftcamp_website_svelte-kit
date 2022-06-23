@@ -4,7 +4,7 @@
     import '../lib/styles/global-colors.css'
 
     import Header from '../lib/components/index/Header/Header.svelte';
-    import Footer from '../lib/components/index/Footer/Footer.svelte'
+    import Footer from '../lib/components/index/footer/Footer/Footer.svelte'
     import Spacer from "../lib/components/index/Spacer/Spacer.svelte";
 
 </script>
