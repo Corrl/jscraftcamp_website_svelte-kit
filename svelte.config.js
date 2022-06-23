@@ -9,6 +9,7 @@ const config = {
 			fallback: null,
 			precompress: false
 		}),
+		appDir: 'app',
 		prerender: {
 			default: true,
 		},
