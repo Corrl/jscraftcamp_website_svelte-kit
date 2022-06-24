@@ -5,8 +5,6 @@
     <link rel="icon" href="/jscraftcamp_website_svelte-kit/favicon.png"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
-    <title>JSCraftCamp | JSCraftCamp - 2022 in Munich</title>
-
     <meta name="description" content="Website for JSCraftCamp - 2022 in Munich"/>
     <meta name="theme-color" content="#ececec"/>
 
@@ -19,21 +17,23 @@
     <meta property="og:description" content="Website for JSCraftCamp - 2022 in Munich"/>
     <meta property="og:title" content="JSCraftCamp"/>
 
-    <meta http-equiv="content-security-policy" content="">
-	<link rel="stylesheet" href="/jscraftcamp_website_svelte-kit/_app/immutable/assets/pages/__layout.svelte-917f159f.css">
+    <meta http-equiv="content-security-policy" content=""><title>Registration | JSCraftCamp - 2022 in Munich</title>
+	<link rel="stylesheet" href="/jscraftcamp_website_svelte-kit/_app/immutable/assets/pages/__layout.svelte-288c7153.css">
 	<link rel="stylesheet" href="/jscraftcamp_website_svelte-kit/_app/immutable/assets/Spacer-c8a49f3c.css">
-	<link rel="stylesheet" href="/jscraftcamp_website_svelte-kit/_app/immutable/assets/pages/registration.svelte-198b625a.css">
+	<link rel="stylesheet" href="/jscraftcamp_website_svelte-kit/_app/immutable/assets/pages/registration.svelte-bd7555c9.css">
 	<link rel="stylesheet" href="/jscraftcamp_website_svelte-kit/_app/immutable/assets/Page-c3ea5c40.css">
-	<link rel="modulepreload" href="/jscraftcamp_website_svelte-kit/_app/immutable/start-be7021e0.js">
-	<link rel="modulepreload" href="/jscraftcamp_website_svelte-kit/_app/immutable/chunks/index-a6c412fe.js">
+	<link rel="modulepreload" href="/jscraftcamp_website_svelte-kit/_app/immutable/start-eea836d1.js">
+	<link rel="modulepreload" href="/jscraftcamp_website_svelte-kit/_app/immutable/chunks/index-ddf8e57f.js">
 	<link rel="modulepreload" href="/jscraftcamp_website_svelte-kit/_app/immutable/chunks/paths-396f020f.js">
-	<link rel="modulepreload" href="/jscraftcamp_website_svelte-kit/_app/immutable/pages/__layout.svelte-8a6affe6.js">
-	<link rel="modulepreload" href="/jscraftcamp_website_svelte-kit/_app/immutable/chunks/Logo-f46f7b11.js">
-	<link rel="modulepreload" href="/jscraftcamp_website_svelte-kit/_app/immutable/chunks/Spacer-6f65bf43.js">
-	<link rel="modulepreload" href="/jscraftcamp_website_svelte-kit/_app/immutable/pages/registration.svelte-fce00100.js">
-	<link rel="modulepreload" href="/jscraftcamp_website_svelte-kit/_app/immutable/chunks/Page-2a5b085f.js">
+	<link rel="modulepreload" href="/jscraftcamp_website_svelte-kit/_app/immutable/pages/__layout.svelte-d5c25232.js">
+	<link rel="modulepreload" href="/jscraftcamp_website_svelte-kit/_app/immutable/chunks/Logo-c186cde3.js">
+	<link rel="modulepreload" href="/jscraftcamp_website_svelte-kit/_app/immutable/chunks/Spacer-37a4d25d.js">
+	<link rel="modulepreload" href="/jscraftcamp_website_svelte-kit/_app/immutable/pages/registration.svelte-e2096108.js">
+	<link rel="modulepreload" href="/jscraftcamp_website_svelte-kit/_app/immutable/chunks/Page-93f15020.js">
 </head>
 <body>
+
+
 
 
 
@@ -51,7 +51,7 @@
 
 
 
-<main class="main-column svelte-860zit"><div class="svelte-15fp16m"><h2 class="uppercase wide svelte-15fp16m">Registration</h2>
+<main class="main-column svelte-860zit"><div class="svelte-15fp16m"><h2 class="svelte-15fp16m">Registration</h2>
 
     <p class="svelte-qfl24e">To register for JSCraftCamp you have to add a json file with your name
         and some other information to our 
@@ -87,10 +87,10 @@
 
 
 
-    <h3 class="svelte-1re2d85">The JSON Format
+    <h3 class="svelte-1egr6p6">The JSON Format
 </h3>
 
-<div><pre class="svelte-1re2d85"><code>{
+<div><pre class="svelte-1egr6p6"><code>{
     &quot;name&quot;: &quot;My Name&quot;,
     &quot;company&quot;: &quot;my company&quot;,
     &quot;when&quot;: {
@@ -108,35 +108,35 @@
 }
 </code></pre></div>
 
-<div id="table-wrapper" class="svelte-1re2d85"><table class="svelte-1re2d85"><tbody><tr class="svelte-1re2d85"><td class="svelte-1re2d85 strong"><code>name *</code></td>
-                <td class="svelte-1re2d85"><!-- HTML_TAG_START -->first name and last name or a nick name<!-- HTML_TAG_END --></td>
-            </tr><tr class="svelte-1re2d85"><td class="svelte-1re2d85"><code>company</code></td>
-                <td class="svelte-1re2d85"><!-- HTML_TAG_START -->A company<!-- HTML_TAG_END --></td>
-            </tr><tr class="svelte-1re2d85"><td class="svelte-1re2d85 strong"><code>when.friday *</code></td>
-                <td class="svelte-1re2d85"><!-- HTML_TAG_START -->If you are attending on Friday (Boolean value)<!-- HTML_TAG_END --></td>
-            </tr><tr class="svelte-1re2d85"><td class="svelte-1re2d85 strong"><code>when.saturday *</code></td>
-                <td class="svelte-1re2d85"><!-- HTML_TAG_START -->If you are attending on Saturday (Boolean value)<!-- HTML_TAG_END --></td>
-            </tr><tr class="svelte-1re2d85"><td class="svelte-1re2d85 strong"><code>tags *</code></td>
-                <td class="svelte-1re2d85"><!-- HTML_TAG_START -->Share what you think is important, use at least one tag. (Array of strings)<!-- HTML_TAG_END --></td>
-            </tr><tr class="svelte-1re2d85"><td class="svelte-1re2d85 strong"><code>vegan *</code></td>
-                <td class="svelte-1re2d85"><!-- HTML_TAG_START -->Just for planning: Let us know if you are a vegan** (Boolean value)<!-- HTML_TAG_END --></td>
-            </tr><tr class="svelte-1re2d85"><td class="svelte-1re2d85 strong"><code>vegetarian *</code></td>
-                <td class="svelte-1re2d85"><!-- HTML_TAG_START -->Just for planning: Let us know if you are a vegetarian** (Boolean value)<!-- HTML_TAG_END --></td>
-            </tr><tr class="svelte-1re2d85"><td class="svelte-1re2d85"><code>allergies</code></td>
-                <td class="svelte-1re2d85"><!-- HTML_TAG_START -->Tell us if you have any special dietary requirements**<!-- HTML_TAG_END --></td>
-            </tr><tr class="svelte-1re2d85"><td class="svelte-1re2d85 strong"><code>what_is_my_connection_to_javascript *</code></td>
-                <td class="svelte-1re2d85"><!-- HTML_TAG_START -->2-5 sentences about your experience with JavaScript or related technologies.<!-- HTML_TAG_END --></td>
-            </tr><tr class="svelte-1re2d85"><td class="svelte-1re2d85"><code>what_can_i_contribute</code></td>
-                <td class="svelte-1re2d85"><!-- HTML_TAG_START -->1-3 sentences about what you would like to contribute to the BarCamp.<!-- HTML_TAG_END --></td>
-            </tr><tr class="svelte-1re2d85"><td class="svelte-1re2d85"><code>tshirt **</code></td>
-                <td class="svelte-1re2d85"><!-- HTML_TAG_START -->We will have a limited number of t-shirts with the event and sponsor logos. If you want one: fit (W=women, M=Man) and size (S,M,L,XL,XXL), e.g. W-S or M-XL. If your registration is shortly before the event there might be no time to have a t-shirt produced for you, please be aware.<!-- HTML_TAG_END --></td>
-            </tr><tr class="svelte-1re2d85"><td class="svelte-1re2d85"><code>twitter</code></td>
-                <td class="svelte-1re2d85"><!-- HTML_TAG_START -->Your Twitter handle <em>without</em> the leading <code>@</code>.<!-- HTML_TAG_END --></td>
+<div id="table-wrapper" class="svelte-1egr6p6"><table class="svelte-1egr6p6"><tbody><tr class="svelte-1egr6p6"><td class="svelte-1egr6p6 strong"><code>name *</code></td>
+                <td class="svelte-1egr6p6"><!-- HTML_TAG_START -->first name and last name or a nick name<!-- HTML_TAG_END --></td>
+            </tr><tr class="svelte-1egr6p6"><td class="svelte-1egr6p6"><code>company</code></td>
+                <td class="svelte-1egr6p6"><!-- HTML_TAG_START -->A company<!-- HTML_TAG_END --></td>
+            </tr><tr class="svelte-1egr6p6"><td class="svelte-1egr6p6 strong"><code>when.friday *</code></td>
+                <td class="svelte-1egr6p6"><!-- HTML_TAG_START -->If you are attending on Friday (Boolean value)<!-- HTML_TAG_END --></td>
+            </tr><tr class="svelte-1egr6p6"><td class="svelte-1egr6p6 strong"><code>when.saturday *</code></td>
+                <td class="svelte-1egr6p6"><!-- HTML_TAG_START -->If you are attending on Saturday (Boolean value)<!-- HTML_TAG_END --></td>
+            </tr><tr class="svelte-1egr6p6"><td class="svelte-1egr6p6 strong"><code>tags *</code></td>
+                <td class="svelte-1egr6p6"><!-- HTML_TAG_START -->Share what you think is important, use at least one tag. (Array of strings)<!-- HTML_TAG_END --></td>
+            </tr><tr class="svelte-1egr6p6"><td class="svelte-1egr6p6 strong"><code>vegan *</code></td>
+                <td class="svelte-1egr6p6"><!-- HTML_TAG_START -->Just for planning: Let us know if you are a vegan** (Boolean value)<!-- HTML_TAG_END --></td>
+            </tr><tr class="svelte-1egr6p6"><td class="svelte-1egr6p6 strong"><code>vegetarian *</code></td>
+                <td class="svelte-1egr6p6"><!-- HTML_TAG_START -->Just for planning: Let us know if you are a vegetarian** (Boolean value)<!-- HTML_TAG_END --></td>
+            </tr><tr class="svelte-1egr6p6"><td class="svelte-1egr6p6"><code>allergies</code></td>
+                <td class="svelte-1egr6p6"><!-- HTML_TAG_START -->Tell us if you have any special dietary requirements**<!-- HTML_TAG_END --></td>
+            </tr><tr class="svelte-1egr6p6"><td class="svelte-1egr6p6 strong"><code>what_is_my_connection_to_javascript *</code></td>
+                <td class="svelte-1egr6p6"><!-- HTML_TAG_START -->2-5 sentences about your experience with JavaScript or related technologies.<!-- HTML_TAG_END --></td>
+            </tr><tr class="svelte-1egr6p6"><td class="svelte-1egr6p6"><code>what_can_i_contribute</code></td>
+                <td class="svelte-1egr6p6"><!-- HTML_TAG_START -->1-3 sentences about what you would like to contribute to the BarCamp.<!-- HTML_TAG_END --></td>
+            </tr><tr class="svelte-1egr6p6"><td class="svelte-1egr6p6"><code>tshirt **</code></td>
+                <td class="svelte-1egr6p6"><!-- HTML_TAG_START -->We will have a limited number of t-shirts with the event and sponsor logos. If you want one: fit (W=women, M=Man) and size (S,M,L,XL,XXL), e.g. W-S or M-XL. If your registration is shortly before the event there might be no time to have a t-shirt produced for you, please be aware.<!-- HTML_TAG_END --></td>
+            </tr><tr class="svelte-1egr6p6"><td class="svelte-1egr6p6"><code>twitter</code></td>
+                <td class="svelte-1egr6p6"><!-- HTML_TAG_START -->Your Twitter handle <em>without</em> the leading <code>@</code>.<!-- HTML_TAG_END --></td>
             </tr></tbody></table>
 
-    <p class="svelte-1re2d85"><strong>*: mandatory field</strong></p>
+    <p class="svelte-1egr6p6"><strong>*: mandatory field</strong></p>
 
-    <p class="svelte-1re2d85">**: This is a free and completely sponsored event. Even though we want
+    <p class="svelte-1egr6p6">**: This is a free and completely sponsored event. Even though we want
         to try, we can not guarantee to be able to respect every dietary
         requirement
     </p>
@@ -194,10 +194,10 @@
 </footer>
 
 
-		<script type="module" data-sveltekit-hydrate="1a2geos">
-		import { start } from "/jscraftcamp_website_svelte-kit/_app/immutable/start-be7021e0.js";
+		<script type="module" data-sveltekit-hydrate="g4odx1">
+		import { start } from "/jscraftcamp_website_svelte-kit/_app/immutable/start-eea836d1.js";
 		start({
-			target: document.querySelector('[data-sveltekit-hydrate="1a2geos"]').parentNode,
+			target: document.querySelector('[data-sveltekit-hydrate="g4odx1"]').parentNode,
 			paths: {"base":"/jscraftcamp_website_svelte-kit","assets":"/jscraftcamp_website_svelte-kit"},
 			session: {},
 			route: true,
