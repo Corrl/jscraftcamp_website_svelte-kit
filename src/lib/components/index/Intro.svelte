@@ -1,5 +1,7 @@
 <script>
     import Spacer from "../Spacer/Spacer.svelte";
+
+    export let base
 </script>
 
 <span class="mini-headline">
@@ -29,7 +31,7 @@
 </span>
 
 <p class="subline">
-    <a href="/register">Register now</a> and follow us{" "}
+    <a href="{base}/registration">Register now</a> and follow us{" "}
     <a href="https://twitter.com/jscraftcamp">on twitter @JSCraftCamp!</a>
 </p>
 

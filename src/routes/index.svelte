@@ -27,7 +27,7 @@
 
 <Page headline="Welcome to JSCraftCamp 2022! 🎉" center>
 
-    <Intro/>
+    <Intro {base}/>
 
     <Spacer size="xs"/>
     <Logo/>

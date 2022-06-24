@@ -53,7 +53,7 @@
 <div>
     {#each sponsors as {name, src, link}}
         <a href={link} rel="noopener noreferrer" target="_blank">
-            <img alt={name} {src} width="100%"/>
+            <img alt={name} src={base}{src} width="100%"/>
         </a>
     {/each}
 </div>
