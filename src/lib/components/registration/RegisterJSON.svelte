@@ -65,6 +65,7 @@
         background: white;
         margin: revert;
         font-size: 1rem;
+        overflow: hidden;
     }
 
     #table-wrapper {
@@ -83,6 +84,15 @@
 
     td {
         padding: 15px 5px;
+    }
+
+    @media (max-width: 900px) {
+        td:first-child {
+            max-width: 12rem;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
     }
 
     td:first-child {

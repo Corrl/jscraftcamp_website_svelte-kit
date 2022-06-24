@@ -5,11 +5,14 @@
 
 <div class:center>
 
-    <h2 class="uppercase wide">{headline}</h2>
+    <h2>{headline}</h2>
 
-    <slot/>
+    <slot>
+        This is the default Page content via slot.
+    </slot>
 
 </div>
+
 
 <style>
     .center {

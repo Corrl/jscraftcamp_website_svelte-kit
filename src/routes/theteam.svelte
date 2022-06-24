@@ -1,6 +1,16 @@
+<script context="module">
+    export function load() {
+        return {
+            stuff: {
+                title: 'The Team'
+            }
+        }
+    }
+</script>
+
 <script>
-    import Page from "../lib/components/index/Page.svelte";
-    import Spacer from "../lib/components/index/Spacer/Spacer.svelte";
+    import Page from "../lib/components/Page.svelte";
+    import Spacer from "../lib/components/Spacer/Spacer.svelte";
 
     import {base} from '$app/paths'
 
@@ -77,11 +87,12 @@
 
     <div id="the-team">
         {#each theTeam as {name, photo, email}}
+            {@const [vorname, nachname] = name.split(' ')}
             <div>
                 <img src={`${base}/img/theteam/${photo}`}
                      alt={"member image " + name}
                 />
-                <div>{name}</div>
+                <div><b>{vorname}</b> {nachname}</div>
                 {#if email}
                     <a href={"mailto:" + email}>
                         {email}
@@ -101,38 +112,15 @@
     }
 
     img {
-        max-height: 100%;
         max-width: 100%;
         object-fit: cover;
     }
 
     #the-team {
         display: grid;
-        grid-gap: .8rem 0;
-        grid-template-columns: repeat(1, calc(100% / 1));
+        grid-template-columns: repeat(auto-fill, minmax(min(250px, 100%), 1fr));
         grid-template-rows: repeat(auto-fit, min-content);
-    }
-
-    @media (min-width: 600px) {
-        #the-team {
-            grid-template-columns: repeat(2, calc(100% / 2));
-        }
-    }
-
-    @media (min-width: 900px) {
-        #the-team {
-            grid-template-columns: repeat(3, calc(100% / 3));
-        }
-    }
-
-    @media (min-width: 1200px) {
-        #the-team {
-            grid-template-columns: repeat(4, calc(100% / 4));
-        }
-    }
-
-    #the-team > div {
-        padding: 0 .8rem;
+        grid-gap: 1rem;
     }
 
     #the-team a {

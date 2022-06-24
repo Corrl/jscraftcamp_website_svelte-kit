@@ -1,6 +1,15 @@
-<script>
-    import Page from "../lib/components/index/Page.svelte"
+<script context="module">
+    export function load() {
+        return {
+            stuff: {
+                title: 'Page not found'
+            }
+        }
+    }
+</script>
 
+<script>
+    import Page from "../lib/components/Page.svelte"
 </script>
 
 <Page headline="Not found" center>

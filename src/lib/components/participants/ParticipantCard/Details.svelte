@@ -1,7 +1,6 @@
 <script>
     export let what_is_my_connection_to_javascript
     export let what_can_i_contribute
-
 </script>
 
 <div>

@@ -1,6 +1,6 @@
 <script>
-    import Logo from "../../../../../assets/images/Logo.svelte"
-    import FooterUL from "../FooterUL.svelte";
+    import Logo from "../../../../assets/images/Logo.svelte"
+    import FooterUL from "./FooterUL.svelte";
 
     import {base} from '$app/paths'
 

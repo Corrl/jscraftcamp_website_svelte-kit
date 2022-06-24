@@ -2,7 +2,6 @@
     import Spacer from './Spacer.svelte'
 
     export let size
-
 </script>
 
 <div>

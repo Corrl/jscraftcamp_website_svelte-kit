@@ -2,6 +2,8 @@ import adapter from '@sveltejs/adapter-static';
 
 const dev = process.env.NODE_ENV === 'development';
 
+const BASE_PATH = '/jscraftcamp_website_svelte-kit'
+
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
 	kit: {
@@ -14,9 +16,9 @@ const config = {
 		prerender: {
 			default: true,
 		},
-		trailingSlash: 'always', // & .nojekyll file for deployment on GitHub pages
+		trailingSlash: 'always', // + .nojekyll file for deployment on GitHub pages so '_' in filenames are no problem
 		paths: {
-			base: dev ? '' : '/jscraftcamp_website_svelte-kit', // there's currently a bug, so only add to beginning of link paths when building production version (npm run preview won't work)
+			base: dev ? '' : BASE_PATH, // having a base path in dev mode is currently not possible, so only add to beginning of link paths when building production version ('npm run preview' won't work)
 		}
 	}
 };

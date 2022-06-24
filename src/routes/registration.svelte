@@ -1,14 +1,17 @@
 <script context="module">
     export function load({props}) {
         return {
-            props
+            props,
+            stuff: {
+                title: 'Registration'
+            }
         }
     }
 </script>
 
 <script>
-    import Page from "../lib/components/index/Page.svelte";
-    import Spacer from "../lib/components/index/Spacer/Spacer.svelte";
+    import Page from "../lib/components/Page.svelte";
+    import Spacer from "../lib/components/Spacer/Spacer.svelte";
     import RegisterJSON from "../lib/components/registration/RegisterJSON.svelte";
 
     import { base } from '$app/paths';

@@ -1,6 +1,16 @@
+<script context="module">
+    export function load() {
+        return {
+            stuff: {
+                title: 'Sponsoring'
+            }
+        }
+    }
+</script>
+
 <script>
-import Page from "../lib/components/index/Page.svelte";
-import Spacer from "../lib/components/index/Spacer/Spacer.svelte";
+import Page from "../lib/components/Page.svelte";
+import Spacer from "../lib/components/Spacer/Spacer.svelte";
 
 </script>
 
