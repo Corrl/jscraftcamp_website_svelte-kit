@@ -26,4 +26,8 @@
         margin: 2rem 0;
     }
 
+    img {
+        height: 100px;
+    }
+
 </style>

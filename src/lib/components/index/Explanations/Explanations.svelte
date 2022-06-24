@@ -1,6 +1,6 @@
 <script>
     import Explanation from "./Explanation.svelte";
-    import code from '../../../../assets/images/code.svg'
+    import code from '../../../../assets/images/code_edit.svg'
     import rocket from '../../../../assets/images/rocket.svg'
     import camp from '../../../../assets/images/camp.svg'
 </script>
