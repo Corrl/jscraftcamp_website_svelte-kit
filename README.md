@@ -1,38 +1,44 @@
-# create-svelte
+# JSCraftCamp Website - SvelteKit Clone
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+**Original** built with **Gatsby & Netlify**
 
-## Creating a project
+- repo https://github.com/jscraftcamp/website
+- website https://jscraftcamp.org/
 
-If you're seeing this, you've probably already done this step. Congrats!
+**This version** using **SvelteKit & GitHub Pages**
 
-```bash
-# create a new project in the current directory
-npm init svelte
+- website https://corrl.github.io/jscraftcamp_website_svelte-kit/
 
-# create a new project in my-app
-npm init svelte my-app
-```
+## Develop
 
-## Developing
+1. clone project
+2. `npm install`
+3. `npm run dev`
+4. start developing
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+## Build
 
-```bash
-npm run dev
+`npm run build`
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+The project has a base path set for hosting on GitHub Pages in `svelte.config.js`  
+The preview of the build via `npm run preview` won't work because of the base path
 
-## Building
+## Storybook
 
-To create a production version of your app:
+`npm run storybook`
 
-```bash
-npm run build
-```
+There still seem to exist various problems using Storybook with SvelteKit.  
+To make the initial installation work:
 
-You can preview the production build with `npm run preview`.
+1. `{ "type": "commonjs" }` in `.storybook/package.json`
+2. `"preprocess": import(...)` in `.storybook/main.js`
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+Problems:
+
+- Only "Svelte JS" syntax seems possible, not "Svelte NATIVE-FORMAT"
+- for Components with aliased imports (`Header.svelte`,`Footer.svelte`,...) further adjustments needed https://github.com/storybookjs/storybook/issues/14952
+
+## Conclusion
+
+This was a great exercise for learning a bit more about SvelteKit, get an impression of Storybook, use GitHub 
+Actions for the first time and also train basic HTML & CSS stuff.   

@@ -8,7 +8,7 @@
     <h2>{headline}</h2>
 
     <slot>
-        This is the default Page content via slot.
+        The default Page content.
     </slot>
 
 </div>

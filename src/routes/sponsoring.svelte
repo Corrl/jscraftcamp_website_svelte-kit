@@ -16,7 +16,7 @@ import Spacer from "../lib/components/Spacer/Spacer.svelte";
 
 <Page headline="Want to become a sponsor?" center>
 
-    <h2>Expose your Company to a Group of Highly Motivated Technology Enthusiasts</h2>
+    <div class="subline">Expose your Company to a Group of Highly Motivated Technology Enthusiasts</div>
 
     <Spacer size="xs"/>
 
@@ -109,7 +109,10 @@ import Spacer from "../lib/components/Spacer/Spacer.svelte";
 </Page>
 
 <style>
-    h2 {
+    .subline {
+        font-size: var(--font-size-h2);
+        font-weight: var(--font-weight-bold);
+        font-family: var(--font-poppins);
         max-width: 50ch;
         text-align: center;
         line-height: 110%;

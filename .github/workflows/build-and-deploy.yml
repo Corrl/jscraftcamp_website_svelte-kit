@@ -1,4 +1,4 @@
-name: First workflow
+name: Build & deploy on push
 
 permissions:
   contents: write
