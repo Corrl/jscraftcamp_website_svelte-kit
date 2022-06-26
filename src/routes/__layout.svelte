@@ -18,6 +18,10 @@
     <title>{title} | JSCraftCamp - 2022 in Munich</title>
 </svelte:head>
 
+<div>
+    Clone of <a href="https://jscraftcamp.org/">https://jscraftcamp.org/</a>
+</div>
+
 <Spacer size="s"/>
 
 <Header/>
@@ -36,5 +40,15 @@
 <style>
     main {
         /*border: 1px solid teal;*/
+    }
+    div {
+        position: absolute;
+        top: .5rem;
+        right: .5rem;
+        font-size: .9rem;
+        background: black;
+        color: white;
+        padding: .2rem .4rem;
+        border-radius: .3rem;
     }
 </style>
