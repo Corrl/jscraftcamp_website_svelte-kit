@@ -1,4 +1,4 @@
-import{S as E,i as S,s as W,x as q,y as A,z as I,r as J,p as V,C as F,e as m,t as d,k as x,c as h,a as v,h as g,d as a,m as C,b as _,g as c,F as y,n as j}from"../chunks/index-ddf8e57f.js";import{P as B}from"../chunks/Page-93f15020.js";function D($){let t,r,n,o,p,f,i,b,u,l,w;return{c(){t=m("p"),r=d(`We are committed to providing a friendly, safe and welcoming environment
+import{S as E,i as S,s as W,x as q,y as A,z as I,r as J,p as V,C as F,e as m,t as d,k as x,c as h,a as v,h as g,d as a,m as C,b as _,g as c,F as y,n as j}from"../chunks/index-ddf8e57f.js";import{P as B}from"../chunks/Page-3f920286.js";function D($){let t,r,n,o,p,f,i,b,u,l,w;return{c(){t=m("p"),r=d(`We are committed to providing a friendly, safe and welcoming environment
         for all, regardless of gender, sexual orientation, programming language,
         ability, ethnicity, socioeconomic status, and religion (or lack
         thereof).`),n=x(),o=m("p"),p=d(`We believe in people and our guests - so we ask nothing more of
