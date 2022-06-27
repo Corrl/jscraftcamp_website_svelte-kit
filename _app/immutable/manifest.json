@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-17d5b604.js",
+    "file": "start-f42dce97.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -50,13 +50,14 @@
     ]
   },
   "src/routes/imprint.svelte": {
-    "file": "pages/imprint.svelte-383bfb5a.js",
+    "file": "pages/imprint.svelte-c7cce975.js",
     "src": "src/routes/imprint.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-ddf8e57f.js",
-      "_Page-3f920286.js"
+      "_Page-3f920286.js",
+      "_Spacer-37a4d25d.js"
     ]
   },
   "src/routes/index.svelte": {
